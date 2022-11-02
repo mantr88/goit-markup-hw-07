@@ -257,7 +257,7 @@ a {
     background-position: center;
 }
 
-        /* our-preferences */
+        /* preferences */
 
 
 .preferences__title {
@@ -608,7 +608,7 @@ a {
     color: var(--white-font-color);
 }
 
-.logo--bottom-margin {
+.bottom__logo {
    margin-bottom: 20px;
 }
 
