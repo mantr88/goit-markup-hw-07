@@ -36,12 +36,14 @@
     color: $footer-font-color;
 
     transition: color 250ms $timing-function;
-}
 
-.bottom___link:hover,
-.bottom___link:focus {
+    
+    &:hover,
+    &:focus {
     color: $main-color;
 }
+}
+
 
 .bottom___link--margin {
     display: block;

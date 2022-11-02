@@ -41,10 +41,11 @@
     outline: none;
 
     transition: border-color 250ms $timing-function;
-}
 
-.order__input:focus {
+    
+    &:focus {
     border-color: $main-color;
+}
 }
 
 .order__icon {
@@ -56,10 +57,10 @@
     fill: #212121;
 
     transition: fill 250ms $timing-function;
-}
 
-.order__input:focus + .order__icon {
+    .order__input:focus + & {
     fill: $main-color;
+}
 }
 
 .order__label {
@@ -109,11 +110,11 @@
     margin-right: 7px;
     background-image: url(../images/icon-check-off.svg);
     background-size: contain;
-    background-repeat: no-repeat; 
-}
-
-.order__checkbox:checked + .order__checkbox-icon {
+    background-repeat: no-repeat;
+    
+    .order__checkbox:checked + & {
     background-image: url(../images/icon-check-on.svg);
+}
 }
 
 .order__checkbox-text {
@@ -144,9 +145,11 @@
     border: transparent;
 
     transition: background 250ms $timing-function;
-}
 
-.order__form-button:hover,
-.order__form-button:focus {
+    
+    &:hover,
+    &:focus {
     background: $hero-button-bg-color;
 }
+}
+
