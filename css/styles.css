@@ -583,7 +583,73 @@ a {
     line-height: 1.9;
 }
 
-            /* modal window */
+            
+            /* Footer */
+
+.bottom {
+    color: var(--white-font-color);
+    background-color: var(--secondary-bg-color);
+    font-size: 14px;
+    line-height: 1.7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bottom__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.bottom___contacts-box {
+    margin-right: 70px;
+}
+
+.logo__white-color {
+    color: var(--white-font-color);
+}
+
+.logo--bottom-margin {
+   margin-bottom: 20px;
+}
+
+.bottom___location {
+    font-style: normal;
+}
+
+.bottom___location-text {
+    margin-bottom: 9px;
+}
+
+.bottom___link {
+    color: var(--footer-font-color);
+
+    transition: color 250ms var(--timing-function);
+}
+
+.bottom___link:hover,
+.bottom___link:focus {
+    color: var(--main-color);
+}
+
+.bottom___link--margin {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.social-box__text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.social-list__link {
+    background-color: var(--footer-icon-bg-color);
+}
+
+             /* modal window */
 
     .backdrop {
         position: fixed;
@@ -624,7 +690,7 @@ a {
         transition: transform 250ms var(--timing-function);
     }
 
-    .close-button {
+    .modal__close-button {
         position: absolute;
         top: 8px;
         right: 8px;
@@ -639,12 +705,12 @@ a {
         border-radius: 50%;
     }
 
-    .close-button:hover,
-    .close-button:focus {
+    .modal__close-button:hover,
+    .modal__close-button:focus {
         cursor: pointer;
     }
 
-    .close-icon {
+    .modal__close-icon {
         top: 0;
         right: 0;
 
@@ -656,78 +722,14 @@ a {
         transition: fill 250ms var(--timing-function);
     }
 
-    .close-button:hover .close-icon,
-    .close-button:focus .close-icon {
+    .modal__close-button:hover .modal__close-icon,
+    .modal__close-button:focus .modal__close-icon {
         fill: var(--main-color);
     }
-            /* Footer */
-
-.bottom {
-    color: var(--white-font-color);
-    background-color: var(--secondary-bg-color);
-    font-size: 14px;
-    line-height: 1.7;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.bottom__wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.bottom__contacts-box {
-    margin-right: 70px;
-}
-
-.logo__white-color {
-    color: var(--white-font-color);
-}
-
-.logo--bottom-margin {
-   margin-bottom: 20px;
-}
-
-.bottom___location {
-    font-style: normal;
-}
-
-.bottom___location-text {
-    margin-bottom: 9px;
-}
-
-.down {
-    color: var(--footer-font-color);
-
-    transition: color 250ms var(--timing-function);
-}
-
-.down:hover,
-.down:focus {
-    color: var(--main-color);
-}
-
-.email {
-    display: block;
-    margin-bottom: 9px;
-}
-
-.footer-box-text {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
-
-.social-list__icon {
-    background-color: var(--footer-icon-bg-color);
-}
 
         /* Order form */
 
-.form-order {
+.order {
     padding-top: 40px;
     padding-left: 41px;
     padding-right: 39px;
@@ -740,7 +742,7 @@ a {
     color: var(--second-font-color);
 }
 
-.form-title {
+.order__title {
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -750,7 +752,7 @@ a {
 
     color: var(--main-font-color);
 }
-.form-fild {
+.order__fild {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -758,7 +760,7 @@ a {
 
 }
 
-.form-input {
+.order__input {
     position: relative;
     padding-left: 42px;
     padding-top: 12px;
@@ -772,11 +774,11 @@ a {
     transition: border-color 250ms var(--timing-function);
 }
 
-.form-input:focus {
+.order__input:focus {
     border-color: var(--main-color);
 }
 
-.form-icon {
+.order__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -787,16 +789,16 @@ a {
     transition: fill 250ms var(--timing-function);
 }
 
-.form-input:focus + .form-icon {
+.order__input:focus + .order__icon {
     fill: var(--main-color);
 }
 
-.form-label {
+.order__label {
     display: block;
     margin-bottom: 4px;
 }
 
-.comments-area {
+.order__comments-area {
     padding: 12px 16px;
     resize: none;
 
@@ -807,15 +809,15 @@ a {
     transition: border-color 250ms var(--timing-function);
 }
 
-.comments-area:focus {
+.order__comments-area:focus {
     border-color: var(--main-color);
 }
 
-.comments-area::placeholder {
+.order__comments-area::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.check {
+.order__check {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -824,7 +826,7 @@ a {
 }
 
 
-.checkbox {
+.order__checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -832,7 +834,7 @@ a {
     position: absolute;
 }
 
-.checkbox-icon {
+.order__checkbox-icon {
     display: block;
     width: 16px;
     height: 15px;
@@ -842,21 +844,21 @@ a {
     background-repeat: no-repeat; 
 }
 
-.checkbox:checked + .checkbox-icon {
+.order__checkbox:checked + .order__checkbox-icon {
     background-image: url(../images/icon-check-on.svg);
 }
 
-.checkbox-text {
+.order__checkbox-text {
     font-size: 14px;
     line-height: 1.71;
 }
 
-.contract-link{
+.order__contract-link{
     text-decoration: underline;
     color: var(--main-color);
 }
 
-.form-button {
+.order__form-button {
     display: block;
     padding: 10px 52px;
     margin: 0 auto;
@@ -876,8 +878,8 @@ a {
     transition: background 250ms var(--timing-function);
 }
 
-.form-button:hover,
-.form-button:focus {
+.order__form-button:hover,
+.order__form-button:focus {
     background: var(--hero-button-bg-color);
 }
 
@@ -887,7 +889,7 @@ a {
     margin-left: 93px;
 }
 
-.subscribe-text {
+.subscribe__text {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -896,19 +898,17 @@ a {
     text-transform: uppercase;
 }
 
-.input-button-box {
+.subscribe__box {
     display: flex;
     align-items: center;
 }
 
-.subscribe-lable {
+.subscribe__lable {
     font-size: 16px;
-    line-height: 1.25;
-
-    
+    line-height: 1.25;  
 }
 
-.subscribe-input {
+.subscribe__input {
     width: 368px;
     padding: 15px 16px;
 
@@ -920,7 +920,7 @@ a {
     background-color: var(--secondary-bg-color);
 }
 
-.subscribe-button {
+.subscribe__button {
     padding: 10px 28px;
     margin-left: 10px;
 
@@ -942,7 +942,7 @@ a {
 
 }
 
-.subscribe-icon {
+.subscribe__icon {
     margin-left: 10px;
     width: 24px;
     height: 24px;
