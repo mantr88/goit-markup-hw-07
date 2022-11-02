@@ -649,7 +649,7 @@ a {
     background-color: var(--footer-icon-bg-color);
 }
 
-             /* modal window */
+             /* modal-window */
 
     .backdrop {
         position: fixed;
@@ -727,7 +727,7 @@ a {
         fill: var(--main-color);
     }
 
-        /* Order form */
+        /* Order-form */
 
 .order {
     padding-top: 40px;
@@ -825,7 +825,6 @@ a {
 
 }
 
-
 .order__checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -883,7 +882,7 @@ a {
     background: var(--hero-button-bg-color);
 }
 
-        /* Subscribe form */
+        /* subscribe-form */
 
 .subscribe {
     margin-left: 93px;

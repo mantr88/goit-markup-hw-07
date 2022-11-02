@@ -55,3 +55,14 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.our-work__title,
+.our-team__title,
+.clients_title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
