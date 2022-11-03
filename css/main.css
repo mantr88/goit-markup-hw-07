@@ -789,6 +789,12 @@ a {
 }
 
 .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   margin-left: 93px;
 }
 
@@ -798,15 +804,6 @@ a {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.subscribe__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .subscribe__lable {
@@ -828,6 +825,7 @@ a {
 .subscribe__button {
   padding: 10px 28px;
   margin-left: 10px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
